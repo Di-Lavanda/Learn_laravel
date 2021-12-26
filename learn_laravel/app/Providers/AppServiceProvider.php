@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $categories = Category::orderBy('id')->get();
         View::share([
-            'categories' => $categories
+            'categories' => $categories,
         ]);
     }
 }

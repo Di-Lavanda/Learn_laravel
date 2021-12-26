@@ -31,4 +31,4 @@ class CartController extends Controller
         return response()->json(\Cart::getContent());
     }
 }
-//(<span class="cart-qty">/*{{\Cart::session($_COOKIE['cart_id'])->getTotalQuantity()}}</span>)
+
