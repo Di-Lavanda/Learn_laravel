@@ -11,5 +11,6 @@ class HomeController extends Controller
         $products = Product::orderBy('created_at')->take(8)->get();
         //dd($products);
         return view('home.index', ['products' => $products]);
+
     }
 }

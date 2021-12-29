@@ -32,7 +32,7 @@
                             <nav class="main_nav">
                                 <ul>
                                     <li class="hassubs active">
-                                        <a href="index.html">Home</a>
+                                        <a href="/">Home</a>
                                         <ul>
                                             <li><a href="categories.html">Categories</a></li>
                                             <li><a href="product.html">Product</a></li>
@@ -44,9 +44,9 @@
                                     <li class="hassubs">
                                         <a href="categories.html">Categories</a>
                                         <ul>
-                                            @foreach($categories as $category)
-                                                <li><a href="{{route('showCategory',$category->alias)}}">{{$category->title}}</a></li>
-                                            @endforeach
+{{--                                            @foreach($categories as $category)--}}
+{{--                                                <li><a href="{{route('showCategory',$category->alias)}}">{{$category->title}}</a></li>--}}
+{{--                                            @endforeach--}}
                                         </ul>
                                     </li>
                                     <li><a href="#">Accessories</a></li>
@@ -67,7 +67,7 @@
 													c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/>
                                             </g>
 										</svg>
-                                        <div>Cart (<span class="cart-qty">{{\Cart::session($_COOKIE['cart_id'])->getTotalQuantity()}}</span>)</div>
+{{--                                        <div>Cart(<span class="cart-qty">{{\Cart::session($_COOKIE['cart_id'])->getTotalQuantity()}}</span>) </div>--}}
                                     </a>
                                 </div>
                                 <div class="search">
