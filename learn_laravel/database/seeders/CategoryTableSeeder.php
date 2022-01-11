@@ -19,21 +19,18 @@ class CategoryTableSeeder extends Seeder
             'title' => 'Phones ',
             'desc' => 'some description',
             'img' => 'categories.jpg',
-            'description' => 'some description',
             'alias'=>'phones',
         ]);
         DB::table('categories')->insert([
             'title' => 'Cameras ',
             'desc' => 'some description',
             'img' => 'categories.jpg',
-            'description' => 'some description',
             'alias'=>'cameras',
         ]);
         DB::table('categories')->insert([
             'title' => 'Laptops ',
             'desc' => 'some description',
             'img' => 'categories.jpg',
-            'description' => 'some description',
             'alias'=>'laptops',
         ]);
     }

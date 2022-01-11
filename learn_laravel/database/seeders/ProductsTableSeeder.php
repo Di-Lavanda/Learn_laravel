@@ -19,6 +19,7 @@ class ProductsTableSeeder extends Seeder
             'price' => rand(100, 1500),
             'in_stock' => 1,
             'description' => 'some description',
+            'category_id' => rand(1, 3),
         ]);
     }
 }
